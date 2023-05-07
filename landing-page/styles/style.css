@@ -101,7 +101,7 @@ nav {
 }
 
 .show .last {
-  margin: 20px;
+  margin-bottom: 20px;
 }
 
 .login-links {
@@ -215,6 +215,10 @@ form {
   font-size: 60px;
 }
 
+.sample {
+  display: none;
+}
+
 .btn {
   border: none;
   background: aqua;
@@ -271,6 +275,27 @@ footer p {
 
 .fa-thumbs {
   text-align: center;
+}
+
+.h2 {
+  color: white;
+  text-align: left;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.sample {
+  background: rgb(0, 10, 15);
+  width: 600px;
+  border-radius: 10px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: start;
+}
+
+.img {
+  width: 550px;
 }
 
 @media (max-width: 400px) {
@@ -345,5 +370,25 @@ footer p {
 
   .show .cancel {
     display: none;
+  }
+
+  .sample {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .javascript,
+  .python,
+  .c-plus-plus,
+  .php {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+  }
+
+  .sample {
+    margin: 0;
   }
 }
