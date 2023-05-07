@@ -27,6 +27,10 @@ nav {
   width: 50px;
 }
 
+.cancel {
+  display: none;
+}
+
 .show-courses {
   border: none;
   background: none;
@@ -43,6 +47,61 @@ nav {
 
 .courses {
   display: none;
+}
+
+.show {
+  display: block;
+  list-style: none;
+  background: rgb(52, 113, 174);
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  font-size: 17px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.show .cancel {
+  display: block;
+}
+
+.cancel {
+  text-align: end;
+  width: fit-content;
+  margin: 0;
+  position: relative;
+  left: 90%;
+  right: 0;
+  padding: 20px;
+  color: white;
+}
+
+.show li {
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.show li a {
+  text-decoration: none;
+  color: white;
+}
+
+.show li:hover a {
+  color: black;
+}
+
+.show .cancel:hover {
+  color: black;
+}
+
+.show li:hover {
+  background: white;
+}
+
+.show .last {
+  margin: 20px;
 }
 
 .login-links {
@@ -214,17 +273,26 @@ footer p {
   text-align: center;
 }
 
+@media (max-width: 400px) {
+  .sign-up {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
   .show-courses {
     display: none;
   }
 
   .courses {
+    position: static;
+    background: none;
     display: flex;
     list-style: none;
     gap: 30px;
     align-items: center;
     height: 70px;
+    font-size: 17px;
   }
 
   .courses a {
@@ -232,8 +300,11 @@ footer p {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 17px;
     padding: 23px 10px;
+  }
+
+  .courses li {
+    margin: 0;
   }
 
   .courses li :hover {
@@ -260,5 +331,19 @@ footer p {
 
   .submit {
     left: 77%;
+  }
+
+  .courses li:hover a {
+    text-decoration: none;
+    color: white;
+    background-color: none;
+  }
+
+  .show li:hover {
+    background: none;
+  }
+
+  .show .cancel {
+    display: none;
   }
 }
