@@ -304,6 +304,10 @@ footer p {
   width: 550px;
 }
 
+.last {
+  display: block;
+}
+
 @media (max-width: 400px) {
   .sign-up {
     display: none;
@@ -317,6 +321,14 @@ footer p {
   .socials {
     justify-content: center;
     margin-right: 0;
+  }
+
+  .h1 {
+    font-size: 55px;
+  }
+
+  .form {
+    width: 300px;
   }
 }
 
@@ -390,6 +402,10 @@ footer p {
 
   .sample {
     display: block;
+  }
+
+  .last {
+    display: none;
   }
 }
 
