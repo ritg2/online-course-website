@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: lightgreen;
+}
+
+.head {
+    background-color: rgb(2, 65, 129);
+    text-align: right;
+    height: 80px;
+}
+
+.register {
+    background: aquamarine;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    margin: 15px;
+}
+
+.box {
+    text-align: center;
+}
+
+.box h1 {
+    font-size: 70px;
+    margin: 10px;
+}
+
+.main {
+    box-sizing: border-box;
+    border: 15px solid green;
+    padding: 10px;
+    margin: 30px;
+}
