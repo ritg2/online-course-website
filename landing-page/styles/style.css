@@ -247,7 +247,7 @@ footer {
 
 .socials {
   padding-top: 20px;
-  margin-right: 30px;
+  margin-right: 40px;
   justify-content: end;
   display: flex;
   gap: 30px;
@@ -307,6 +307,16 @@ footer p {
 @media (max-width: 400px) {
   .sign-up {
     display: none;
+  }
+
+  .login-links {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .socials {
+    justify-content: center;
+    margin-right: 0;
   }
 }
 
