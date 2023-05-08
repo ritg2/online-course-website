@@ -69,13 +69,24 @@ nav {
 
 .cancel {
   text-align: end;
-  width: fit-content;
-  margin: 0;
-  position: relative;
-  left: 90%;
-  right: 0;
-  padding: 20px;
   color: white;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.cancel i {
+  padding: 10px 15px;
+  font-size: 18px;
+}
+
+.cancel:hover {
+  background: none !important;
+  color: white !important;
+}
+
+.cancel i:hover {
+  background: white;
+  color: black;
 }
 
 .show li {
